@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>productlist</title>
+    <link rel="stylesheet" href="css/productDetails.css">
+    <script src="lib/flexible/flexible.js"></script> 
+    
+</head>
+<body>
+    <div class="mmm_container" id="header">
+        <!-- 头部 -->
+    <div class="mmm_header clearfix">
+            <div class="logo fl">
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 搜索 -->
+        <div class="mmm_search">
+            <input type="text" class="fl" placeholder="请输入你想比价的商品">
+            <button class="fr">搜索</button>
+        </div>
+       
+        <!-- 内容区域 -->
+        <div class="info">
+            
+        </div>
+
+        <div class="commit">
+            <div class="c_top">
+                网友评价
+            </div>
+            <ul class="cm">
+               <!-- 挖坑 -->
+            </ul>
+            <div class="c_more">
+                <div class="look">查看更多评价</div>
+            </div>
+        </div>
+    
+        <!-- 底部区域 -->
+        <div class="mmm_footer">
+            <div class="mf">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="#header" class="top"><img src="images/top.jpg">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                    <p class="p1"><a href="javascript:;"><span>手机APP下载</span></a>
+                        <a href="javascript:;"><span>慢慢买手机版</span></a>
+                        <span>- - 掌上比价平台</span></p>
+                    <p class="p2">m.manmanbuy.com</p>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <!-- 详情模板 -->
+   <script type="text/html" id="detailTmp">
+    <div class="top" id="top">
+            <div class="left fl">
+                    <a href="index.html">首页</a> >
+                    <a href="category.html">全部分类</a> >
+                    <a href="javascript:;">{{result[0].cate}}</a> >
+                </div>
+            <div class="right fr">
+                <button>筛选</button>
+            </div>
+        </div>
+        <div class="content">
+           <div class="detail">
+              <p>{{result[0].productName}}</p>
+               <div class="img">
+                   {{# result[0].productImg}}
+               </div>
+               <div class="collect">
+                   <img src="images/sc.jpg" alt="">
+               </div>
+           </div>
+           <ul class="parameter clearfix">
+            <li><a href="javascript:;">比价购买</a></li>
+            <li><a href="javascript:;">产品参数</a></li>
+            <li><a href="javascript:;" id="pc"></a></li>
+           </ul>
+           <!-- <div class="gobuy">
+               <div class="left fl">
+                   <img src="images/360.png" alt="" class="fl">
+                   <span>京东商城</span>
+               </div>
+               <div class="right fr">
+                   <span>&yen;1999.00</span>
+                   <button>去购买</button>
+               </div>
+           </div> -->
+           {{#result[0].bjShop}}
+           <div class="text">
+              <p>*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p> 
+            </div>
+        </div>
+</script>
+
+<!-- 评价模板 -->
+<script type="text/html" id="commitTmp">
+{{each result v i}}
+<li><a href="javascript:;">
+        <div class="clearfix"> <span class="name fl">{{v.comName}}</span>
+         <span class="date fr">{{v.comTime}}</span></div>
+         <p class="from">{{v.comFrom}}</p>
+         <p>{{v.comContent}}</p>
+     </a></li>
+{{/each}}
+</script>
+   <script src="lib/jquery/jquery-1.12.4.min.js"></script> 
+   <script src="lib/template/template-web.js"></script>
+   <script src="js/common.js"></script>
+   <script src="js/productDetails.js"></script>
+</body>
+</html>

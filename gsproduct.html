@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gsproduct</title>
+    <link rel="stylesheet" href="css/gsproduct.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <script src="lib/flexible/flexible.js"></script> 
+    
+</head>
+<body>
+   
+    <div class="mmm_container" id="header">
+        
+        <!-- 头部 -->
+    <div class="mmm_header clearfix">
+            <div class="left">
+                <a href="javascript:history.back();">
+                 <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+           <h3>凑单品</h3>
+
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+         <div class="nav">
+             <div class="left clearfix">
+                 
+                 <ul class="out clearfix">
+                     <li><a href="javascript:;" class="firstout">
+                            <span class="text1">京东</span><i class="fa fa-sort-up (alias)"></i>
+                           
+                     </a>
+                    </li>
+                     <li><a href="javascript:;"  class="secondout">
+                            <span class="text2">华北</span><i class="fa fa-sort-up (alias)"></i>
+                           
+                     </a></li>
+                     <li><a href="javascript:;">
+                            <span class="text">全部价格</span><i class="fa fa-sort-up (alias)"></i>
+                     </a></li>
+
+                 </ul>
+
+                 
+                 <ul class="firstin clearfix">
+                               
+                    </ul>
+                <ul class="secondin clearfix">
+                            
+                    </ul>
+             </div>
+             <div class="right">
+                 <i class="fa fa-reorder (alias)"></i>
+             </div>
+         </div>
+
+         <div class="info">
+             <!-- 挖坑 -->
+         </div>
+        </div>
+       
+    
+        <!-- 底部区域 -->
+        <div class="mmm_footer">
+            <div class="mf">
+                <ul class="cleearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="#header" class="top"><img src="images/top.jpg">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                    <p class="p1"><a href="javascript:;"><span>手机APP下载</span></a>
+                        <a href="javascript:;"><span>慢慢买手机版</span></a>
+                        <span>- - 掌上比价平台</span></p>
+                    <p class="p2">m.manmanbuy.com</p>
+            </div>
+        </div>
+    
+    </div>
+
+     
+<!-- 店铺模板 -->
+<script type="text/html" id="shopTmp">
+{{each result v i}}
+
+<li data-id="{{v.shopId}}">{{v.shopName}}
+
+    <i class="fa fa-check"></i>
+</li>
+{{/each}}
+
+</script>
+  
+
+<!-- 区域模板 -->
+<script type="text/html" id="areaTmp">
+    {{each result v i}}
+    
+    <li data-id="{{v.areaId}}">{{v.areaName}}
+            <i class="fa fa-check"></i>
+    </li>
+    {{/each}}
+    
+    </script>
+<!-- 列表模板 -->
+<script type="text/html" id="listTmp">
+    <ul class="clearfix">
+        {{each result v i}}
+            <li><a href="javascript:;" data-id="{{v.productId}}">
+               <div class="img">
+                    <img src="{{v.productImg}}">
+                   </div>
+                   <div class="text clearfix">
+                       <p>{{v.productName}}</p>
+                       <span>{{v.productPrice}}</span>
+                       <button class="fr">去凑单</button>
+                   </div>
+            </a></li>
+        {{/each}}
+        </ul>
+
+</script>
+   <script src="lib/jquery/jquery-1.12.4.min.js"></script> 
+   <script src="lib/template/template-web.js"></script>
+   <script src="lib/iscroll.js"></script>
+   <script src="lib/swiper/js/swiper.min.js"></script>
+   <script src="js/common.js"></script>
+   <script src="js/gsproduct.js"></script>
+
+</body>
+</html>

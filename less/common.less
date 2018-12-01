@@ -1,0 +1,141 @@
+
+
+.mmm_container{
+    width:100%;
+    background-color: #f1f1f1;
+    padding-top:100rem/@base;
+  
+    
+}
+
+// 头部
+.mmm_header{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100rem/@base;
+    background-color: @Color1;
+    z-index:999;
+
+   .logo{
+    padding:25rem/@base 0;
+    padding-left:34rem/@base;
+    height:100rem/@base;
+    
+    a{
+        display:block;
+
+        img{
+            width:375rem/@base;
+            height:100%;
+        }
+    }
+   
+   }
+
+   .appdown{
+       padding:12rem/@base;
+       height:100rem/@base;
+       
+       a{
+           display:block;
+           img{
+               width:72rem/@base;
+               height:72rem/@base;
+           }
+       }
+   }
+}
+
+
+// 搜索
+.mmm_search{
+    height:103rem/@base;
+    width:100%;
+    background-color: #fff;
+    padding:22rem/@base 20rem/@base;
+    
+    input{
+        width:572rem/@base;
+        height:60rem/@base;
+        background-color: #F1F1F1;
+        border-radius:30rem/@base;
+        padding-left:42rem/@base;
+        font-size:22rem/@base;
+    }
+    button{
+        width:126rem/@base;
+        height:60rem/@base;
+        background-color: @Color1;
+        border-radius:30rem/@base;
+        color:#fff;
+        font-size:24rem/@base;
+    }
+}
+
+// 底部
+.mmm_footer{
+    background-color: #EDEDED;
+    .mf{
+        
+        height:68rem/@base;
+        width:100%;
+        background-color: #EFEFEF;
+        border-top:2rem/@base solid #C5C5C5; 
+        border-bottom:2rem/@base solid #C5C5C5; 
+        li{
+            width:33.33%;
+            height:100%;
+            float: left;
+            a{
+                display:block;
+                text-align: center;
+                height:100%;
+                line-height: 68rem/@base;
+                font-size:26rem/@base;
+                
+            }
+            .top{
+                position: relative;
+                // height:68rem/@base;
+                img{
+                    width:28rem/@base;
+                    height:28rem/@base;
+                    position: absolute;
+                    left:45rem/@base;
+                    top:18rem/@base;
+                }
+            }
+        }
+        li:nth-child(2) a{
+            border-left:2rem/@base solid #C5C5C5; 
+            border-right:2rem/@base solid #C5C5C5; 
+        }
+    }
+    .bottom{
+        height: 122rem/@base;
+        width:100%;
+        background-color: #EFEFEF;
+        text-align: center;
+        .p1{
+            margin-top:30rem/@base;
+            span{
+                font-size:24rem/@base;
+            }
+            a:first-child span{
+                color:#FF2645;
+            }
+            span:nth-child(3){
+                color:#868788;
+            }
+        }
+        .p2{
+            color:#868788;
+            margin-top:16rem/@base;
+            font-size:24rem/@base;
+ 
+        }
+    }
+}
+

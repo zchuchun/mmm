@@ -1,0 +1,201 @@
+@import 'base.less';
+@import 'common.less';
+
+@mainColor:#F4483E;
+.mmm_header{
+    background-color: @mainColor;
+    width:750rem/@base;
+    h3{
+        font-size:45rem/@base;
+        color:#fff;
+        font-weight: bold;
+        text-align: center;
+        line-height: 100rem/@base;
+    }
+    .appdown{
+        position: absolute;
+        right:0;
+        bottom:0;
+    }
+    .left{
+        width: 80rem/@base;
+        height: 90rem/@base;
+        position: absolute;
+        left:0;
+        top:0;
+        a{
+            display:block;
+            font-size:80rem/@base;
+            color:#fff;
+            text-align: center;
+            line-height:100rem/@base;
+         
+        }
+    }
+}
+
+.wrapper{
+    height:80rem/@base;
+    background-color: #fff;
+    width:100%;
+    overflow: hidden;
+    ul{
+        height:78rem/@base;
+       
+        li{
+           float:left; 
+           height:100%;
+           padding-left:25rem/@base;
+           padding-right:25rem/@base;
+           a{
+               height:100%;
+                display:block;
+                line-height:75rem/@base;
+                font-size:28rem/@base;
+               
+           }
+           a.active{
+               border-bottom:3rem/@base solid @mainColor;
+               color:#E1282B;
+           }
+        }
+    }
+}
+
+.content{
+    margin-top:10rem/@base;
+    ul{
+        margin-bottom:50rem/@base;
+        li{
+            height:312rem/@base;
+            width:100%;
+            background-color: pink;
+            background-color: #fff;
+            padding:20rem/@base 10rem/@base;
+            border-bottom:12rem/@base solid #F7F7F7;
+
+                .img{
+                    width:258rem/@base;
+                    height:258rem/@base;
+                    margin-right:10rem/@base;
+                    float:left;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .info{
+                    overflow:hidden;
+                    position: relative;
+                    height:100%;
+                    .title{
+                        font-size:32rem/@base;
+                        line-height:50rem/@base;
+                    }
+                    >p{
+                        font-size:40rem/@base;
+                        color:@mainColor;
+                    i{
+                        font-size:30rem/@base;
+                        color:@mainColor;
+                    }
+                    em{
+                        font-size:20rem/@base;
+                        color:@mainColor;
+                        padding-left:8rem/@base;
+                        padding-right:8rem/@base;
+                    }
+                    del{
+                        color:#B2AAAD;
+                        font-size:26rem/@base;
+                        margin-left:20rem/@base;
+                    }
+                    }
+
+                    .bar{
+                        margin-top:10rem/@base;
+                        position: relative;
+                        i{  
+                            display:block;
+                            float:left;
+                            margin-top:6rem/@base;
+                            margin-right:10rem/@base;
+                            width:165rem/@base;
+                            height:28rem/@base;
+                            border-radius:14rem/@base;
+                            position: relative;
+                            border:2rem/@base solid @mainColor;
+                            background-color: #FFB7B7;
+                            overflow: hidden;
+                            em{
+                                position: absolute;
+                                left:0;
+                                top:0;
+                                height:100%;
+                                border-radius:14rem/@base;;
+                                background-color: @mainColor;
+                                font-style:normal;
+                                
+                                
+                                
+                            }
+                            span{
+                                position: absolute;
+                                left:50%;
+                                transform:translateX(-50%);
+                                top:-4rem/@base;
+                                color:#fff;
+                                font-size:30rem/@base;
+                            }
+                        }
+                        b{
+                            font-size:30rem/@base;
+                            color:@mainColor;
+                            position: absolute;
+                            left:200rem/@base;
+                            top:0;
+                         
+                        }
+                    }
+
+                    .coupon{
+                        width:100%;
+                        height:58rem/@base;
+                         position: absolute;
+                           left:0;
+                           bottom:0;
+                           margin-top:16rem/@base;
+                        a:first-child{
+                            display:block;
+                            float:left;
+                            width:214rem/@base;
+                            height:50rem/@base;
+                            border:2rem/@base dashed @mainColor;
+                            font-size:24rem/@base;
+                            text-align: center;
+                            line-height:50rem/@base;
+
+                        }
+                        a:last-child{
+                            display:block;
+                            float:right;
+                            width:118rem/@base;
+                            height:58rem/@base;
+                            font-size:28rem/@base;
+                            color:#fff;
+                            background-color: @mainColor;
+                            text-align: center;
+                            text-align: center;
+                            line-height:58rem/@base;
+                            border-radius:10rem/@base;
+
+                        }
+                    }
+                }
+            }
+        li:last-child{
+            border-bottom:none;
+        }
+        }
+
+}

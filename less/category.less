@@ -1,0 +1,71 @@
+@import 'base.less';
+@import 'common.less';
+
+.mmm_container{
+    background-color: #fff;
+}
+.info{
+    width:100%;
+    background-color: #EDEDED;
+    border-radius:10rem/@base;
+    margin-bottom:50rem/@base;
+
+    >ul >li{
+       
+            width:100%;
+            border-bottom:2rem/@base solid #CFCFCF;
+           
+            >a{
+                display:block;
+                background: url("../images/arrow1.gif") right center no-repeat;
+                font-size:30rem/@base;
+                line-height: 78rem/@base;
+                text-indent: 40rem/@base;
+                font-weight:bold;
+    
+            }
+            >.cate{
+                display:none;
+                background-color: #F9F9F9;
+                width:100%;
+                
+                li{
+                    width:33.33%;
+                    float:left;
+                    a{
+                        display:block;
+                        color:#52544A;
+                        font-size:26rem/@base;
+                        font-weight:normal;
+                        text-align: center;
+                        line-height:78rem/@base;
+                        // border-top:2rem/@base solid #CFCFCF;
+                        border-bottom:2rem/@base solid #CFCFCF;
+                        border-right:2rem/@base solid #CFCFCF;
+                    }
+                   
+                }
+               
+                li:nth-child(3n) a{
+                    border-right:none;
+                }
+                li:last-child a{
+                    border-bottom:none;
+                }
+
+                &.active{
+                    display:block;
+                }
+            }
+            
+           
+        }
+        li:last-child{
+            border-bottom:none;
+        }
+
+       
+        
+    }
+    
+   

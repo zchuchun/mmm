@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sitenav</title>
+    <link rel="stylesheet" href="css/sitenav.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <script src="lib/flexible/flexible.js"></script> 
+    
+</head>
+<body>
+   
+    <div class="mmm_container" id="header">
+        
+        <!-- 头部 -->
+    <div class="mmm_header clearfix">
+            <div class="left">
+                <a href="javascript:history.back();">
+                 <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+           <h3>商场导航</h3>
+
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+         <ul class="clearfix shop">
+            
+         </ul>
+        </div>
+       
+    
+        <!-- 底部区域 -->
+        <div class="mmm_footer">
+            <div class="mf">
+                <ul class="cleearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="#header" class="top"><img src="images/top.jpg">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                    <p class="p1"><a href="javascript:;"><span>手机APP下载</span></a>
+                        <a href="javascript:;"><span>慢慢买手机版</span></a>
+                        <span>- - 掌上比价平台</span></p>
+                    <p class="p2">m.manmanbuy.com</p>
+            </div>
+        </div>
+    
+    </div>
+    <!-- 模板 -->
+    <script type="text/html" id="tmp">
+    {{each result v i}}
+    <li data-id="{{v.navId}}"><a href="{{v.navHref}}" class="clearfix">
+            <div class="img">
+                <img src="{{v.navImg}}" alt="">
+            </div>
+            <span class="fl">{{v.navTitle}}</span>
+        </a></li>
+    {{/each}}
+    </script>
+    
+   <script src="lib/jquery/jquery-1.12.4.min.js"></script> 
+   <script src="lib/template/template-web.js"></script>
+   <script src="lib/iscroll.js"></script>
+   <script src="lib/swiper/js/swiper.min.js"></script>
+   <script src="js/common.js"></script>
+   <script src="js/sitenav.js"></script>
+
+  
+</body>
+</html>

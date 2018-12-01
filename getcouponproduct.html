@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getcouponproduct</title>
+    <link rel="stylesheet" href="css/getcouponproduct.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <script src="lib/flexible/flexible.js"></script> 
+    
+</head>
+<body>
+   
+    <div class="mmm_container" id="header">
+        
+        <!-- 头部 -->
+    <div class="mmm_header clearfix">
+            <div class="left">
+                <a href="javascript:history.back();">
+                 <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+           <h3>肯德基优惠券</h3>
+
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+           <div class="title">--点餐前出示手机中的优惠券，即可享受优惠--</div>
+           <ul class="coupon">
+              <!-- 挖坑 -->
+           </u>
+        </div>
+       
+    
+        <!-- 底部区域 -->
+        <div class="mmm_footer">
+            <div class="mf">
+                <ul class="cleearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="#header" class="top"><img src="images/top.jpg">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                    <p class="p1"><a href="javascript:;"><span>手机APP下载</span></a>
+                        <a href="javascript:;"><span>慢慢买手机版</span></a>
+                        <span>- - 掌上比价平台</span></p>
+                    <p class="p2">m.manmanbuy.com</p>
+            </div>
+        </div>
+    
+    </div>
+
+     <!-- 模态框 -->
+     <div class="box">
+         <i class="fa fa-times close"></i>
+           <div class="wrapper">
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- 挖坑 -->
+                        </div>
+                    
+                       
+                    </div>
+                     <!-- 如果需要导航按钮 -->
+                     <div class="s_left">
+                         <i class="fa fa-angle-left"></i>
+                     </div>
+                     <div class="s_right">
+                         <i class="fa fa-angle-right"></i>
+                     </div>
+                    
+           </div>
+
+        </div>
+
+   <!-- 模板 -->
+   <script type="text/html" id="tmp">
+   {{each result v i}}
+   <li data-id="{{v.couponProductId}}"><a href="javascript:;">
+        <div class="img">
+            {{# v.couponProductImg}}
+        </div>
+        <div class="info">
+            <p class="header">{{v.couponProductName}}</p>
+             <span>{{v.couponProductPrice}}</span>
+             <p class="time">{{v.couponProductTime}}</p>
+        </div>
+    </a></li>
+   {{/each}}
+</script>
+
+<!-- 轮播图模板 -->
+<script type="text/html" id="swiperTmp">
+    {{each result v i}}
+    <div class="swiper-slide"><img src="{{v.imgSrc}}"></div>
+   
+    {{/each}}
+
+</script>
+   <script src="lib/jquery/jquery-1.12.4.min.js"></script> 
+   <script src="lib/template/template-web.js"></script>
+   <script src="lib/iscroll.js"></script>
+   <script src="lib/swiper/js/swiper.min.js"></script>
+   <script src="js/common.js"></script>
+   <script src="js/getcouponproduct.js"></script>
+
+
+</body>
+</html>

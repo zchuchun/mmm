@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>productlist</title>
+    <link rel="stylesheet" href="css/productlist.css">
+    <script src="lib/flexible/flexible.js"></script> 
+    
+</head>
+<body>
+    <div class="mmm_container" id="header">
+        <!-- 头部 -->
+    <div class="mmm_header clearfix">
+            <div class="logo fl">
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 搜索 -->
+        <div class="mmm_search">
+            <input type="text" class="fl" placeholder="请输入你想比价的商品">
+            <button class="fr">搜索</button>
+        </div>
+       
+        <!-- 内容区域 -->
+        <div class="info">
+            <div class="top" id="top">
+                <!-- 挖坑 -->
+                <div class="right fr">
+                    <button>筛选</button>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="category">
+                    <!-- 挖坑 -->
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li><button class="prev">上一页</button></li>
+                    <li class="select">
+                        <select>
+                          <option value="1"></option>
+                        </select>
+                    </li>
+                    <li><button class="next">下一页</button></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- 底部区域 -->
+        <div class="mmm_footer">
+            <div class="mf">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="#header" class="top"><img src="images/top.jpg">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                    <p class="p1"><a href="javascript:;"><span>手机APP下载</span></a>
+                        <a href="javascript:;"><span>慢慢买手机版</span></a>
+                        <span>- - 掌上比价平台</span></p>
+                    <p class="p2">m.manmanbuy.com</p>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- 分类模板 -->
+    <script type='text/html' id='cateTpl'>
+    <div class="left fl">
+                    <a href="index.html">首页</a> >
+                    <a href="category.html">全部分类</a> >
+                    <a href="javascript:;" data-id="result[0].categoryId">{{result[0].category}}</a> >
+                </div>
+    </script>
+    <!-- 列表模板 -->
+
+    <script  type="text/html" id="listTpl">
+    {{each result v i}}
+        <li><a href="javascript:;" data-id="{{v.productId}}" data-pc="{{v.productCom}}">
+            <div class="img fl">
+                {{# v.productImg}}
+            </div>
+            <div class=".fl text">
+                <p>{{v.productName}}</p>
+                <span>{{v.productPrice}}</span>
+                <p class="price"><span>{{v.productQuote}}</span> &nbsp; <span>{{v.productCom}}</span></p>
+            </div>
+
+        </a></li>
+    {{/each}}
+    </script>
+   <script src="lib/jquery/jquery-1.12.4.min.js"></script> 
+   <script src="lib/template/template-web.js"></script>
+   <script src="js/common.js"></script>
+   <script src="js/productlist.js"></script>
+</body>
+</html>

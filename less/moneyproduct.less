@@ -1,0 +1,209 @@
+@import 'base.less';
+@import 'common.less';
+
+
+.mmm_header{
+    
+    h3{
+        font-size:45rem/@base;
+        color:#fff;
+        font-weight: bold;
+        text-align: center;
+        line-height: 100rem/@base;
+    }
+    .appdown{
+        position: absolute;
+        right:0;
+        bottom:0;
+    }
+    .left{
+        width: 80rem/@base;
+        height: 90rem/@base;
+        position: absolute;
+        left:0;
+        top:0;
+        a{
+            display:block;
+            font-size:80rem/@base;
+            color:#fff;
+            text-align: center;
+            line-height:100rem/@base;
+         
+        }
+    }
+}
+
+.content{
+    padding:0 30rem/@base;
+    background-color: #fff;
+   .title{
+    //    height:100rem/@base;
+       width:100%;
+       font-size:38rem/@base;
+       padding-top:36rem/@base;
+       padding-bottom:30rem/@base;
+       font-weight: bold;
+      
+   } 
+   >p{
+       margin-bottom:26rem/@base;
+       span{
+           color:#ADAEB4;
+           font-size:25rem/@base;
+       }
+   }
+   .text{
+       font-size:32rem/@base;
+       line-height:50rem/@base;
+       .img{
+           width:250rem/@base;
+           height:290rem/@base;
+           float: right;
+           padding:10rem/@base;
+           img{
+               width:100%;
+               height:100%;
+           }
+       }
+   }
+
+   .big{
+       width:100%;
+       height:750rem/@base;
+       padding:30rem/@base;
+       img{
+           width:100%;
+           height:90%;
+
+       }
+   }
+   ul{
+       width:100%;
+       width:276rem/@base;
+       padding:0 18rem/@base;
+       margin:0 auto;
+       box-shadow: 0rem/@base 1rem/@base 3rem/@base #D4D4D4;
+       li{
+           width:100%;
+           height:40rem/@base;
+           border-bottom:1rem/@base dashed #D1D1D1;
+           a{
+               display:block;
+               height:40rem/@base;
+               line-height:40rem/@base;
+               padding:0 16rem/@base;
+               font-size:26rem/@base;
+               strong{
+                   color:#F1743B;
+                   float:right;
+               }
+           }
+       }
+   }
+
+   .gobuy{
+       width:670rem/@base;
+       height:60rem/@base;
+       background-color: @Color1;
+       margin-top:40rem/@base;
+       margin-bottom:90rem/@base;
+       border-radius:10rem/@base;
+       font-size:28rem/@base;
+       text-align: center;
+       line-height:60rem/@base;
+       color:#fff;
+   }
+   .saoma{
+       width:100%;
+       height:276rem/@base;
+       margin-bottom:60rem/@base;
+       img{
+           width:100%;
+           height:100%;
+       }
+   }
+   .cu-content-pl{
+       .tit{
+            font-size:34rem/@base;
+            margin-bottom:30rem/@base;
+       }
+       .reply{
+           .form{
+
+            height:220rem/@base;
+            width:100%;
+            border:2rem/@base solid #ccc;
+            margin-bottom:30rem/@base;
+               textarea{
+                  height:140rem/@base;
+               }
+               .ctrl{
+                   width:100%;
+                   background-color: #FDFDFD;
+                   border-top:2rem/@base solid #F5F5F5;
+                   input{
+                    width:196rem/@base;
+                    height:66rem/@base;
+                    display:block;
+                    background-color: @Color1;
+                    float:right;
+                    color:#fff;
+                    font-size:32rem/@base;
+                    border:2rem/@base solid #FF7310;
+                   }
+               }
+           }
+       }
+
+       .list{
+           width:100%;
+           ul{
+            width:100%;
+               li{
+                   width:100%;
+                   height:200rem/@base;
+                   padding-top:30rem/@base;
+                   .userimg{
+                       
+                       img{
+                           width:80rem/@base;
+                           height:80rem/@base;
+                           border-radius:50%;
+                           float:left;
+                       }
+                   }
+                   .con{
+                      .name{
+                        .username{
+                            float:left;
+                            color:#509BC3;
+                            margin-top:10rem/@base;
+                            font-size:30rem/@base;
+                            margin-left:10rem/@base;
+                        }
+                        .time{
+                            float:right;
+                            margin-top:10rem/@base;
+                            font-size:30rem/@base;
+                        }
+                      }
+                       .content{
+                        margin-left:60rem/@base;
+                        font-size:28rem/@base;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        .yinyong{
+                            display:none;
+                        }
+
+                       }
+                   }
+
+               }
+           }
+       }
+   }
+}

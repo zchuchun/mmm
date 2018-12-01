@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>discountProduct</title>
+    <link rel="stylesheet" href="css/discountProduct.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <script src="lib/flexible/flexible.js"></script> 
+    
+</head>
+<body>
+    <div class="mmm_container" id="header">
+        <!-- 头部 -->
+    <div class="mmm_header clearfix">
+            <div class="left">
+                <a href="javascript:history.back();">
+                 <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+           <h3>国内折扣</h3>
+
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+        </div>
+       
+    
+        <!-- 底部区域 -->
+        <div class="mmm_footer">
+            <div class="mf">
+                <ul class="cleearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="#header" class="top"><img src="images/top.jpg">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                    <p class="p1"><a href="javascript:;"><span>手机APP下载</span></a>
+                        <a href="javascript:;"><span>慢慢买手机版</span></a>
+                        <span>- - 掌上比价平台</span></p>
+                    <p class="p2">m.manmanbuy.com</p>
+            </div>
+        </div>
+    
+    </div>
+
+    
+   <script type="text/html" id="tmp">
+    <div class="title">
+            {{result[0].productName}}
+        </div>
+        <span class="price">{{result[0].productPrice}}</span>
+        <p><span>{{result[0].productFrom}}</span><span>{{result[0].productTime}}</span><span>{{result[0].productTips}}</span></p>
+        <div class="text">
+            <div class="img">
+                {{# result[0].productImg}}
+            </div>
+            来自新百伦的经典300系列复刻跑鞋，这款跑鞋鞋型的灵感来自于70年代的英伦校园，从低帮和简洁明确的剪裁设计中就能看出所谓的“风度复兴”风潮。而中底的部分依旧为用户们加入了REV缓震科技工艺，整体的舒适度也会更高、更佳好穿些。 
+           天猫商城新百伦官方旗舰店，双11预售价为299元，其中30元定金看抵扣45元的优惠，实际284元包邮到手，其他渠道同款的售价最低350元起，喜欢的慢友们不妨及时关注下了。
+        </div>
+        <div class="big">
+            {{# result[0].productImg}}
+        </div>
+        
+       
+      <div class="gobuy">
+          前往购买
+      </div>
+      <div class="saoma">
+          <img src="images/mmbweixin2.png" alt="">
+      </div>
+
+      {{# result[0].productComment}}
+    
+</script>
+   <script src="lib/jquery/jquery-1.12.4.min.js"></script> 
+   <script src="lib/template/template-web.js"></script>
+   <script src="js/common.js"></script>
+   <script src="js/discountProduct.js"></script>
+</body>
+</html>
