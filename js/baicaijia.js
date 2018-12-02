@@ -12,14 +12,16 @@ $(function(){
         success:function(info){
             console.log(info);
             var str = template('titleTmp',info);
-           $('.nav').html(str);
-           var lis = $('.nav').children();
-           var width = 0;
-           lis.each(function(i,v){
-               width += v.offsetWidth;
-           })
-           $('.nav').css({
-               width:width,
+           $('.nav').html(str); 
+           $(window).resize(function(){
+            var lis = $('.nav').children();
+            var width = 0;
+            lis.each(function(i,v){
+                width += v.offsetWidth;
+            })
+            $('.nav').css({
+                width:width,
+            })
            })
 
            var myScroll = new IScroll('.wrapper', {
